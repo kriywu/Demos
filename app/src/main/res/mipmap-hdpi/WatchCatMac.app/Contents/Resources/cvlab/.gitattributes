@@ -1,0 +1,11 @@
+# cvlab resource
+# all files in this folder are binary (encrypted)
+* binary
+*.material binary
+*.mesh binary
+*.xshader binary
+*.texture binary
+*.rt binary
+*.scene binary
+*.animaz binary
+*.json binary

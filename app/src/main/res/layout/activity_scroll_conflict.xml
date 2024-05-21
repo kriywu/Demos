@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".scroll_conflict.ScrollConflictActivity">
+
+
+
+    <com.wurengao.surfaceviewtestdemo.scroll_conflict.MyScrollView
+        android:id="@+id/scrollView"
+        android:background="@color/black"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/listContainer"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ListView
+                android:id="@+id/listView"
+                android:background="#FF9900"
+                android:layout_width="0dp"
+                android:layout_height="200dp"/>
+
+            <ListView
+                android:id="@+id/listView2"
+                android:background="#FF0099"
+                android:layout_width="0dp"
+                android:layout_height="200dp"/>
+
+        </LinearLayout>
+
+    </com.wurengao.surfaceviewtestdemo.scroll_conflict.MyScrollView>
+
+
+
+</LinearLayout>
