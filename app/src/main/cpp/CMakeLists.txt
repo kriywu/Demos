@@ -48,7 +48,8 @@ message("Include directories: ${CMAKE_CURRENT_SOURCE_DIR} ${CMAKE_INCLUDE_PATH}"
 add_prefix(${jni_libs_home}/${arch}/lib/ all_libs, prefixed_libs)
 
 # 创建共享库
-add_library(native-lib SHARED native-lib.cc)
+include_directories(utils.h)
+add_library(native-lib SHARED native-lib.cc utils.cpp)
 
 # 链接公共库和自定义库
 target_link_libraries(

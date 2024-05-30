@@ -15,6 +15,7 @@ import androidx.recyclerview.widget.RecyclerView.ViewHolder
 import com.wurengao.surfaceviewtestdemo.audio.AudioFileTransformActivity
 import com.wurengao.surfaceviewtestdemo.broadcast.BroadcastActivity
 import com.wurengao.surfaceviewtestdemo.camera.CameraActivity
+import com.wurengao.surfaceviewtestdemo.mmap.MMapDemoActivity
 import com.wurengao.surfaceviewtestdemo.reentrantlock.ReentrantLockTestActivity
 import com.wurengao.surfaceviewtestdemo.surface.SurfaceADumpActivity
 
@@ -26,10 +27,13 @@ class MainActivity : AppCompatActivity() {
 
     private val list = listOf(
         ActivityData(BroadcastActivity::class.java, "广播"),
-        ActivityData(SurfaceADumpActivity::class.java, "渲染"),
         ActivityData(ReentrantLockTestActivity::class.java, "重入锁") ,
-        ActivityData(CameraActivity::class.java, "相机"),
-        ActivityData(AudioFileTransformActivity::class.java, "音频")
+        ActivityData(CameraActivity::class.java, "视频采集"),
+        ActivityData(SurfaceADumpActivity::class.java, "视频渲染"),
+//        ActivityData(CameraActivity::class.java, "音频采集"),
+        ActivityData(AudioFileTransformActivity::class.java, "音频播放"),
+        ActivityData(OpenGLFilterActivity::class.java, "滤镜"),
+        ActivityData(MMapDemoActivity::class.java, "MMAP"),
     )
 
     override fun onCreate(savedInstanceState: Bundle?) {

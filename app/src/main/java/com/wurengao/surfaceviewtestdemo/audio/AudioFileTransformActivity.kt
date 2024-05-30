@@ -9,6 +9,8 @@ import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.lifecycleScope
 import com.wurengao.surfaceviewtestdemo.R
+import com.wurengao.surfaceviewtestdemo.utils.IProgress
+import com.wurengao.surfaceviewtestdemo.utils.NativeUtils
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 import java.io.File
@@ -88,7 +90,8 @@ class AudioFileTransformActivity : AppCompatActivity() {
         }
         lifecycleScope.launch(Dispatchers.IO) {
             // 执行一些耗时操作...
-            val ret = NativeUtils.transformPCMToMp3(mp3File.absolutePath, pcmFile.absolutePath, object: IProgress {
+            val ret = NativeUtils.transformPCMToMp3(mp3File.absolutePath, pcmFile.absolutePath, object:
+                IProgress {
                 override fun onProgress(value: Int) {
                     Log.d(TAG, "onProgress: $value")
                     callback(value)
@@ -98,7 +101,8 @@ class AudioFileTransformActivity : AppCompatActivity() {
     }
 
     private fun transformMp3ToPCM(mp3File: File, pcmFile: File) {
-        val ret = NativeUtils.transformMp3ToPCM(mp3File.absolutePath, pcmFile.absolutePath, object: IProgress {
+        val ret = NativeUtils.transformMp3ToPCM(mp3File.absolutePath, pcmFile.absolutePath, object:
+            IProgress {
             override fun onProgress(value: Int) {
                 Toast.makeText(applicationContext, "hhh $value", Toast.LENGTH_SHORT).show()
             }

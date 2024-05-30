@@ -17,6 +17,15 @@
         android:theme="@style/Theme.SurfaceViewTestDemo"
         tools:targetApi="31">
         <activity
+            android:name=".mmap.MMapDemoActivity"
+            android:exported="false" />
+        <activity
+            android:name=".OpenGLFilterActivity"
+            android:exported="false" />
+        <activity
+            android:name=".webrtc.WebRTCDemoActivity"
+            android:exported="false" />
+        <activity
             android:name=".audio.AudioFileTransformActivity"
             android:exported="false" />
         <activity
