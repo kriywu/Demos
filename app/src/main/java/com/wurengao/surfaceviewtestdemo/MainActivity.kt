@@ -13,6 +13,7 @@ import androidx.recyclerview.widget.RecyclerView
 import androidx.recyclerview.widget.RecyclerView.LayoutParams
 import androidx.recyclerview.widget.RecyclerView.ViewHolder
 import com.wurengao.surfaceviewtestdemo.audio.AudioFileTransformActivity
+import com.wurengao.surfaceviewtestdemo.binder.BinderClientActivity
 import com.wurengao.surfaceviewtestdemo.broadcast.BroadcastActivity
 import com.wurengao.surfaceviewtestdemo.camera.CameraActivity
 import com.wurengao.surfaceviewtestdemo.mmap.MMapDemoActivity
@@ -34,6 +35,7 @@ class MainActivity : AppCompatActivity() {
         ActivityData(AudioFileTransformActivity::class.java, "音频播放"),
         ActivityData(OpenGLFilterActivity::class.java, "滤镜"),
         ActivityData(MMapDemoActivity::class.java, "MMAP"),
+        ActivityData(BinderClientActivity::class.java, "Binder"),
     )
 
     override fun onCreate(savedInstanceState: Bundle?) {
