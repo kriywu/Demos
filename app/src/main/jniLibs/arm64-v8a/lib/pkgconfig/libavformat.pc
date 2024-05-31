@@ -1,7 +1,7 @@
-prefix=/Users/bytedance/proj/SurfaceViewTestDemo/app/src/main/jniLibs/arm64-v8a
+prefix=/Users/bytedance/proj/Demos/app/src/main/jniLibs/arm64-v8a
 exec_prefix=${prefix}
-libdir=/Users/bytedance/proj/SurfaceViewTestDemo/app/src/main/jniLibs/arm64-v8a/lib
-includedir=/Users/bytedance/proj/SurfaceViewTestDemo/app/src/main/jniLibs/arm64-v8a/include
+libdir=/Users/bytedance/proj/Demos/app/src/main/jniLibs/arm64-v8a/lib
+includedir=/Users/bytedance/proj/Demos/app/src/main/jniLibs/arm64-v8a/include
 
 Name: libavformat
 Description: FFmpeg container format library

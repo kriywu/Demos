@@ -37,7 +37,7 @@
     </FrameLayout>
 
 
-    <com.wurengao.surfaceviewtestdemo.view_basic.SwipeFrameLayout
+    <com.wurengao.demos.view_basic.SwipeFrameLayout
         android:id="@+id/gesture"
         android:layout_width="match_parent"
         android:layout_height="match_parent"/>

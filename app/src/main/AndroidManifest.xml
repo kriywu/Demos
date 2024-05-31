@@ -14,7 +14,7 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.SurfaceViewTestDemo"
+        android:theme="@style/Theme.Demos"
         tools:targetApi="31">
         <activity
             android:name=".binder.BinderClientActivity"
@@ -88,7 +88,7 @@
             android:name=".surface.SurfaceADumpActivity"
             android:exported="true"
             android:label="@string/app_name"
-            android:theme="@style/Theme.SurfaceViewTestDemo" />
+            android:theme="@style/Theme.Demos" />
     </application>
 
 </manifest>

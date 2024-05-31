@@ -3,7 +3,7 @@
 NDK_PATH=/Users/bytedance/Library/Android/sdk/ndk/21.1.6352462                  # Android NDK 路径
 TOOLCHAIN=$NDK_PATH/toolchains/llvm/prebuilt/darwin-x86_64                      # 工具链路径
 SYSROOT=$TOOLCHAIN/sysroot
-OUTPUT_PREFIX=/Users/bytedance/proj/SurfaceViewTestDemo/app/src/main/jniLibs    # 编译输出目录
+OUTPUT_PREFIX=/Users/bytedance/proj/Demos/app/src/main/jniLibs    # 编译输出目录
 ANDROID_API_VERSION=29
 
 #archs="armeabi-v7a arm64-v8a x86 x86_64"

@@ -2,8 +2,8 @@
 // Created by ByteDance on 2024/5/30.
 //
 
-#ifndef SURFACEVIEWTESTDEMO_UTILS_H
-#define SURFACEVIEWTESTDEMO_UTILS_H
+#ifndef DEMOS_UTILS_H
+#define DEMOS_UTILS_H
 
 #include <jni.h>
 
@@ -13,4 +13,4 @@ class utils {
 };
 
 
-#endif //SURFACEVIEWTESTDEMO_UTILS_H
+#endif //DEMOS_UTILS_H

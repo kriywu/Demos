@@ -1,11 +1,11 @@
 #!/bin/sh
 
 # lame库目录
-libDir="Users/bytedance/proj/SurfaceViewTestDemo/app/src/main/cpp/lame-3.100/"
+libDir="Users/bytedance/proj/Demos/app/src/main/cpp/lame-3.100/"
 # ndk目录
 ndkDir="/Users/bytedance/Library/Android/sdk/ndk/21.1.6352462"
 # 输出的库目录
-productRootDir="/Users/bytedance/proj/SurfaceViewTestDemo/app/src/main/jniLibs"
+productRootDir="/Users/bytedance/proj/Demos/app/src/main/jniLibs"
 # 架构
 #archs="armeabi-v7a arm64-v8a x86 x86_64"
 archs="arm64-v8a"

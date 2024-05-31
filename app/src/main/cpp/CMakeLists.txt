@@ -3,7 +3,7 @@ cmake_minimum_required(VERSION 3.4.1)
 project("native-lib")
 
 # 定义变量
-set(jni_libs_home "/Users/bytedance/proj/SurfaceViewTestDemo/app/src/main/jniLibs")
+set(jni_libs_home "/Users/bytedance/proj/Demos/app/src/main/jniLibs")
 set(arch "arm64-v8a")
 
 # 定义一个函数来添加库

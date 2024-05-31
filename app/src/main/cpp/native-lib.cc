@@ -46,7 +46,7 @@ void test() {
 
 extern "C"
 JNIEXPORT jint JNICALL
-Java_com_wurengao_surfaceviewtestdemo_utils_NativeUtils_transformMp3ToPCM(JNIEnv *env, jobject thiz,
+Java_com_wurengao_demos_utils_NativeUtils_transformMp3ToPCM(JNIEnv *env, jobject thiz,
                                                                           jstring mp3_file,
                                                                           jstring pcm_file,
                                                                           jobject callback) {
@@ -54,7 +54,7 @@ Java_com_wurengao_surfaceviewtestdemo_utils_NativeUtils_transformMp3ToPCM(JNIEnv
 }
 extern "C"
 JNIEXPORT jint JNICALL
-Java_com_wurengao_surfaceviewtestdemo_utils_NativeUtils_transformPCMToMp3(JNIEnv *env, jobject thiz,
+Java_com_wurengao_demos_utils_NativeUtils_transformPCMToMp3(JNIEnv *env, jobject thiz,
                                                                           jstring mp3FilePath,
                                                                           jstring pcmFilePath,
                                                                           jobject iProgress) {
@@ -108,7 +108,7 @@ Java_com_wurengao_surfaceviewtestdemo_utils_NativeUtils_transformPCMToMp3(JNIEnv
 }
 extern "C"
 JNIEXPORT jstring JNICALL
-Java_com_wurengao_surfaceviewtestdemo_utils_NativeUtils_nativeReadFromMMap(JNIEnv *env,
+Java_com_wurengao_demos_utils_NativeUtils_nativeReadFromMMap(JNIEnv *env,
                                                                            jobject thiz,
                                                                            jstring path) {
     const char *file_path = env->GetStringUTFChars(path, nullptr);
@@ -139,7 +139,7 @@ Java_com_wurengao_surfaceviewtestdemo_utils_NativeUtils_nativeReadFromMMap(JNIEn
 }
 extern "C"
 JNIEXPORT jint JNICALL
-Java_com_wurengao_surfaceviewtestdemo_utils_NativeUtils_nativeWriteToMMap(JNIEnv *env, jobject thiz,
+Java_com_wurengao_demos_utils_NativeUtils_nativeWriteToMMap(JNIEnv *env, jobject thiz,
                                                                           jstring path,
                                                                           jstring content) {
     const char *file_path = env->GetStringUTFChars(path, nullptr);

@@ -13,6 +13,6 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "SurfaceViewTestDemo"
+rootProject.name = "Demos"
 include(":app")
  

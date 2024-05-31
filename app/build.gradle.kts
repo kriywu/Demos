@@ -4,13 +4,13 @@ plugins {
     id("kotlin-parcelize")
 }
 android {
-    namespace = "com.wurengao.surfaceviewtestdemo"
+    namespace = "com.wurengao.demos"
     compileSdk = 34
     ndkVersion = "21.1.6352462" // 指定你的NDK版本号
 
 
     defaultConfig {
-        applicationId = "com.wurengao.surfaceviewtestdemo"
+        applicationId = "com.wurengao.demos"
         minSdk = 24
         targetSdk = 33
         versionCode = 1

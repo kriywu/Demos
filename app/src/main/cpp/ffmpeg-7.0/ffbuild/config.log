@@ -1,4 +1,4 @@
-# ./configure --prefix=/Users/bytedance/proj/SurfaceViewTestDemo/app/src/main/jniLibs/arm64-v8a --target-os=android --arch=arm64-v8a --disable-asm --enable-neon --enable-cross-compile --enable-shared --disable-static --disable-doc --disable-ffplay --disable-ffprobe --disable-symver --disable-ffmpeg --cc=/Users/bytedance/Library/Android/sdk/ndk/21.1.6352462/toolchains/llvm/prebuilt/darwin-x86_64/bin/aarch64-linux-android29-clang --cxx=/Users/bytedance/Library/Android/sdk/ndk/21.1.6352462/toolchains/llvm/prebuilt/darwin-x86_64/bin/aarch64-linux-android29-clang++ --sysroot=/Users/bytedance/Library/Android/sdk/ndk/21.1.6352462/toolchains/llvm/prebuilt/darwin-x86_64/sysroot --extra-cflags='-Os -fpic '
+# ./configure --prefix=/Users/bytedance/proj/Demos/app/src/main/jniLibs/arm64-v8a --target-os=android --arch=arm64-v8a --disable-asm --enable-neon --enable-cross-compile --enable-shared --disable-static --disable-doc --disable-ffplay --disable-ffprobe --disable-symver --disable-ffmpeg --cc=/Users/bytedance/Library/Android/sdk/ndk/21.1.6352462/toolchains/llvm/prebuilt/darwin-x86_64/bin/aarch64-linux-android29-clang --cxx=/Users/bytedance/Library/Android/sdk/ndk/21.1.6352462/toolchains/llvm/prebuilt/darwin-x86_64/bin/aarch64-linux-android29-clang++ --sysroot=/Users/bytedance/Library/Android/sdk/ndk/21.1.6352462/toolchains/llvm/prebuilt/darwin-x86_64/sysroot --extra-cflags='-Os -fpic '
 ADDR2LINE=/Users/bytedance/Library/Android/sdk/ndk/22.1.7171670/toolchains/arm-linux-androideabi-4.9/prebuilt/darwin-x86_64/bin
 ALL_COMPONENTS='
     
@@ -4702,7 +4702,7 @@ ipns_gateway_protocol
 '
 BASH=/bin/sh
 BASH_ARGC=([0]="17")
-BASH_ARGV=([0]="--extra-cflags=-Os -fpic " [1]="--sysroot=/Users/bytedance/Library/Android/sdk/ndk/21.1.6352462/toolchains/llvm/prebuilt/darwin-x86_64/sysroot" [2]="--cxx=/Users/bytedance/Library/Android/sdk/ndk/21.1.6352462/toolchains/llvm/prebuilt/darwin-x86_64/bin/aarch64-linux-android29-clang++" [3]="--cc=/Users/bytedance/Library/Android/sdk/ndk/21.1.6352462/toolchains/llvm/prebuilt/darwin-x86_64/bin/aarch64-linux-android29-clang" [4]="--disable-ffmpeg" [5]="--disable-symver" [6]="--disable-ffprobe" [7]="--disable-ffplay" [8]="--disable-doc" [9]="--disable-static" [10]="--enable-shared" [11]="--enable-cross-compile" [12]="--enable-neon" [13]="--disable-asm" [14]="--arch=arm64-v8a" [15]="--target-os=android" [16]="--prefix=/Users/bytedance/proj/SurfaceViewTestDemo/app/src/main/jniLibs/arm64-v8a")
+BASH_ARGV=([0]="--extra-cflags=-Os -fpic " [1]="--sysroot=/Users/bytedance/Library/Android/sdk/ndk/21.1.6352462/toolchains/llvm/prebuilt/darwin-x86_64/sysroot" [2]="--cxx=/Users/bytedance/Library/Android/sdk/ndk/21.1.6352462/toolchains/llvm/prebuilt/darwin-x86_64/bin/aarch64-linux-android29-clang++" [3]="--cc=/Users/bytedance/Library/Android/sdk/ndk/21.1.6352462/toolchains/llvm/prebuilt/darwin-x86_64/bin/aarch64-linux-android29-clang" [4]="--disable-ffmpeg" [5]="--disable-symver" [6]="--disable-ffprobe" [7]="--disable-ffplay" [8]="--disable-doc" [9]="--disable-static" [10]="--enable-shared" [11]="--enable-cross-compile" [12]="--enable-neon" [13]="--disable-asm" [14]="--arch=arm64-v8a" [15]="--target-os=android" [16]="--prefix=/Users/bytedance/proj/Demos/app/src/main/jniLibs/arm64-v8a")
 BASH_LINENO=([0]="0")
 BASH_SOURCE=([0]="./configure")
 BASH_VERSINFO=([0]="3" [1]="2" [2]="57" [3]="1" [4]="release" [5]="arm64-apple-darwin22")
@@ -7867,7 +7867,7 @@ FEATURE_LIST='
     static
     swscale_alpha
 '
-FFMPEG_CONFIGURATION='--prefix=/Users/bytedance/proj/SurfaceViewTestDemo/app/src/main/jniLibs/arm64-v8a --target-os=android --arch=arm64-v8a --disable-asm --enable-neon --enable-cross-compile --enable-shared --disable-static --disable-doc --disable-ffplay --disable-ffprobe --disable-symver --disable-ffmpeg --cc=/Users/bytedance/Library/Android/sdk/ndk/21.1.6352462/toolchains/llvm/prebuilt/darwin-x86_64/bin/aarch64-linux-android29-clang --cxx=/Users/bytedance/Library/Android/sdk/ndk/21.1.6352462/toolchains/llvm/prebuilt/darwin-x86_64/bin/aarch64-linux-android29-clang++ --sysroot=/Users/bytedance/Library/Android/sdk/ndk/21.1.6352462/toolchains/llvm/prebuilt/darwin-x86_64/sysroot --extra-cflags='\''-Os -fpic '\'''
+FFMPEG_CONFIGURATION='--prefix=/Users/bytedance/proj/Demos/app/src/main/jniLibs/arm64-v8a --target-os=android --arch=arm64-v8a --disable-asm --enable-neon --enable-cross-compile --enable-shared --disable-static --disable-doc --disable-ffplay --disable-ffprobe --disable-symver --disable-ffmpeg --cc=/Users/bytedance/Library/Android/sdk/ndk/21.1.6352462/toolchains/llvm/prebuilt/darwin-x86_64/bin/aarch64-linux-android29-clang --cxx=/Users/bytedance/Library/Android/sdk/ndk/21.1.6352462/toolchains/llvm/prebuilt/darwin-x86_64/bin/aarch64-linux-android29-clang++ --sysroot=/Users/bytedance/Library/Android/sdk/ndk/21.1.6352462/toolchains/llvm/prebuilt/darwin-x86_64/sysroot --extra-cflags='\''-Os -fpic '\'''
 FILTER_LIST='aap_filter
 abench_filter
 acompressor_filter
@@ -9466,7 +9466,7 @@ libzmq_protocol
 ipfs_gateway_protocol
 ipns_gateway_protocol'
 PS4='+ '
-PWD=/Users/bytedance/proj/SurfaceViewTestDemo/app/src/main/cpp/ffmpeg-7.0
+PWD=/Users/bytedance/proj/Demos/app/src/main/cpp/ffmpeg-7.0
 SHELL=/bin/bash
 SHELLOPTS=braceexpand:hashall:interactive-comments:posix
 SHFLAGS='-shared -Wl,-soname,$$(@F)'
@@ -9641,10 +9641,10 @@ X86ASM_O='-o $@'
 XPC_FLAGS=0x0
 XPC_SERVICE_NAME=0
 ZSH=/Users/bytedance/.oh-my-zsh
-_='# ./configure --prefix=/Users/bytedance/proj/SurfaceViewTestDemo/app/src/main/jniLibs/arm64-v8a --target-os=android --arch=arm64-v8a --disable-asm --enable-neon --enable-cross-compile --enable-shared --disable-static --disable-doc --disable-ffplay --disable-ffprobe --disable-symver --disable-ffmpeg --cc=/Users/bytedance/Library/Android/sdk/ndk/21.1.6352462/toolchains/llvm/prebuilt/darwin-x86_64/bin/aarch64-linux-android29-clang --cxx=/Users/bytedance/Library/Android/sdk/ndk/21.1.6352462/toolchains/llvm/prebuilt/darwin-x86_64/bin/aarch64-linux-android29-clang++ --sysroot=/Users/bytedance/Library/Android/sdk/ndk/21.1.6352462/toolchains/llvm/prebuilt/darwin-x86_64/sysroot --extra-cflags='\''-Os -fpic '\'''
+_='# ./configure --prefix=/Users/bytedance/proj/Demos/app/src/main/jniLibs/arm64-v8a --target-os=android --arch=arm64-v8a --disable-asm --enable-neon --enable-cross-compile --enable-shared --disable-static --disable-doc --disable-ffplay --disable-ffprobe --disable-symver --disable-ffmpeg --cc=/Users/bytedance/Library/Android/sdk/ndk/21.1.6352462/toolchains/llvm/prebuilt/darwin-x86_64/bin/aarch64-linux-android29-clang --cxx=/Users/bytedance/Library/Android/sdk/ndk/21.1.6352462/toolchains/llvm/prebuilt/darwin-x86_64/bin/aarch64-linux-android29-clang++ --sysroot=/Users/bytedance/Library/Android/sdk/ndk/21.1.6352462/toolchains/llvm/prebuilt/darwin-x86_64/sysroot --extra-cflags='\''-Os -fpic '\'''
 __CFBundleIdentifier=com.google.android.studio
 __CF_USER_TEXT_ENCODING=0x1F5:0x19:0x34
-__INTELLIJ_COMMAND_HISTFILE__=/Users/bytedance/Library/Caches/Google/AndroidStudio2022.3/terminal/history/SurfaceViewTestDemo-history1
+__INTELLIJ_COMMAND_HISTFILE__=/Users/bytedance/Library/Caches/Google/AndroidStudio2022.3/terminal/history/Demos-history1
 a3dscope_filter=yes
 a64_muxer=yes
 a64multi5_encoder=yes
@@ -14522,7 +14522,7 @@ ppc4xx=yes
 ppc4xx_deps=ppc
 ppm_decoder=yes
 ppm_encoder=yes
-prefix=/Users/bytedance/proj/SurfaceViewTestDemo/app/src/main/jniLibs/arm64-v8a
+prefix=/Users/bytedance/proj/Demos/app/src/main/jniLibs/arm64-v8a
 prefix_default=/usr/local
 premultiply_filter=yes
 prewitt_filter=yes
