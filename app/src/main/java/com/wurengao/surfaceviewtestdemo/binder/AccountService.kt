@@ -14,7 +14,7 @@ class AccountService : Service() {
     private var uid: String? = null
     private var pwd: String? = null
 
-    private val stub = object : IAccountManagerAidlInterface.Stub() {
+    private val stub = object : IAccountManagerAidlInterfaceStub() {
         override fun signUp(uid: String?, pwd: String?): Int {
             Log.d(TAG, "signUp: cpid=${getCallingPid()} pid=${android.os.Process.myPid()}")
             this@AccountService.uid = uid

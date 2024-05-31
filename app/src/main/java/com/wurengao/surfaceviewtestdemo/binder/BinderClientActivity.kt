@@ -21,16 +21,16 @@ class BinderClientActivity : AppCompatActivity() {
     private val btnSignUp by lazy { findViewById<Button>(R.id.signUp) }
     private val btnSignIn by lazy { findViewById<Button>(R.id.signIn) }
     private val btnGetAccountInfo by lazy { findViewById<Button>(R.id.getAccountInfo) }
-    private var api :IAccountManagerAidlInterface? = null
+    private var remoteInterface :IAccountManagerInterface? = null
 
     private val conn = object: ServiceConnection {
         override fun onServiceConnected(name: ComponentName?, service: IBinder?) {
-            api = IAccountManagerAidlInterface.Stub.asInterface(service)
+            remoteInterface = IAccountManagerInterface.asInterface(service)
             Log.d(TAG, "onServiceConnected: ")
         }
 
         override fun onServiceDisconnected(name: ComponentName?) {
-            api = null
+            remoteInterface = null
             Log.d(TAG, "onServiceDisconnected: ")
         }
     }
@@ -48,17 +48,17 @@ class BinderClientActivity : AppCompatActivity() {
         bindService(intent, conn, BIND_AUTO_CREATE)
 
         btnSignUp.setOnClickListener {
-            val ret = api?.signUp(uid, pwd)
+            val ret = remoteInterface?.signUp(uid, pwd)
             Log.d(TAG, "btnSignUp: $ret")
         }
 
         btnSignIn.setOnClickListener {
-            val ret = api?.signIn(uid, pwd)
+            val ret = remoteInterface?.signIn(uid, pwd)
             Log.d(TAG, "btnSignIn: $ret")
         }
 
         btnGetAccountInfo.setOnClickListener {
-            val ret = api?.getAccountInfo(uid)
+            val ret = remoteInterface?.getAccountInfo(uid)
             val account = Account.fromJSONString(ret!!)
             Log.d(TAG, "btnGetAccountInfo: $account")
         }
