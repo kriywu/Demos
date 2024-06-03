@@ -19,6 +19,7 @@ import com.wurengao.demos.camera.CameraActivity
 import com.wurengao.demos.mmap.MMapDemoActivity
 import com.wurengao.demos.reentrantlock.ReentrantLockTestActivity
 import com.wurengao.demos.surface.SurfaceADumpActivity
+import com.wurengao.demos.view.FlowActivity
 
 
 data class ActivityData(var clz: Class<out Activity>, var desc: String)
@@ -36,6 +37,7 @@ class MainActivity : AppCompatActivity() {
         ActivityData(OpenGLFilterActivity::class.java, "滤镜"),
         ActivityData(MMapDemoActivity::class.java, "MMAP"),
         ActivityData(BinderClientActivity::class.java, "Binder"),
+        ActivityData(FlowActivity::class.java, "自定义ViewGroup"),
     )
 
     override fun onCreate(savedInstanceState: Bundle?) {

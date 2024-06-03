@@ -17,6 +17,9 @@
         android:theme="@style/Theme.Demos"
         tools:targetApi="31">
         <activity
+            android:name=".view.FlowActivity"
+            android:exported="false" />
+        <activity
             android:name=".binder.BinderClientActivity"
             android:exported="false" />
 
