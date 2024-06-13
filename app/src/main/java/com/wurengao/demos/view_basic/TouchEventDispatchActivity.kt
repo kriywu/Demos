@@ -25,11 +25,11 @@ class MyLinearLayout: LinearLayout {
 
     }
 
-    init {
-        setOnClickListener {
-            Log.d(TAG, "${getEntryName()} onClick")
-        }
-    }
+//    init {
+//        setOnClickListener {
+//            Log.d(TAG, "${getEntryName()} onClick")
+//        }
+//    }
 
     override fun dispatchTouchEvent(ev: MotionEvent?): Boolean {
         Log.d(TAG, "${getEntryName()} dispatchTouchEvent start: ${ev?.action}")
@@ -68,9 +68,9 @@ class MyButton: Button {
     constructor(context: Context, attributeSet: AttributeSet) : super(context, attributeSet) ;
 
     init {
-        setOnClickListener {
-            Log.d(TAG, "${getEntryName()} onClick")
-        }
+//        setOnClickListener {
+//            Log.d(TAG, "${getEntryName()} onClick")
+//        }
     }
 
     fun getEntryName(): String {
@@ -96,7 +96,7 @@ class MyButton: Button {
         Log.d(TAG, "${getEntryName()} onTouchEvent start ${event?.action}")
         val ret = super.onTouchEvent(event)
         Log.d(TAG, "${getEntryName()} onTouchEvent end ${event?.action} ret=$ret")
-        return false
+        return ret
     }
 }
 

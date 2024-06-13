@@ -20,6 +20,7 @@ import com.wurengao.demos.mmap.MMapDemoActivity
 import com.wurengao.demos.reentrantlock.ReentrantLockTestActivity
 import com.wurengao.demos.surface.SurfaceADumpActivity
 import com.wurengao.demos.view.FlowActivity
+import com.wurengao.demos.view_basic.TouchEventDispatchActivity
 
 
 data class ActivityData(var clz: Class<out Activity>, var desc: String)
@@ -38,6 +39,7 @@ class MainActivity : AppCompatActivity() {
         ActivityData(MMapDemoActivity::class.java, "MMAP"),
         ActivityData(BinderClientActivity::class.java, "Binder"),
         ActivityData(FlowActivity::class.java, "自定义ViewGroup"),
+        ActivityData(TouchEventDispatchActivity::class.java, "事件分发处理")
     )
 
     override fun onCreate(savedInstanceState: Bundle?) {
