@@ -7,7 +7,7 @@
     android:fitsSystemWindows="true"
     android:orientation="vertical"
     android:gravity="center"
-    tools:context=".view_basic.GestureActivity">
+    tools:context=".core.touch.GestureActivity">
 
     <FrameLayout
         android:id="@+id/feed"
@@ -37,7 +37,7 @@
     </FrameLayout>
 
 
-    <com.wurengao.demos.view_basic.SwipeFrameLayout
+    <com.wurengao.demos.core.touch.SwipeFrameLayout
         android:id="@+id/gesture"
         android:layout_width="match_parent"
         android:layout_height="match_parent"/>

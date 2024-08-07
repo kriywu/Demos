@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".launch_mode.FirstActivity">
+    tools:context=".core.activity.launch_mode.FirstActivity">
 
     <Button
         android:id="@+id/btn1"

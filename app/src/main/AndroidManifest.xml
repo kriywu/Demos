@@ -17,38 +17,38 @@
         android:theme="@style/Theme.Demos"
         tools:targetApi="31">
         <activity
-            android:name=".view.FlowActivity"
+            android:name=".core.view.FlowActivity"
             android:exported="false" />
         <activity
-            android:name=".binder.BinderClientActivity"
+            android:name=".core.ipc.BinderClientActivity"
             android:exported="false" />
 
         <service
-            android:name=".binder.AccountService"
+            android:name=".core.ipc.AccountService"
             android:enabled="true"
             android:exported="true"
             android:process=":remote" />
 
         <activity
-            android:name=".mmap.MMapDemoActivity"
+            android:name=".utils.mmap.MMapDemoActivity"
             android:exported="false" />
         <activity
-            android:name=".OpenGLFilterActivity"
+            android:name=".media.OpenGLFilterActivity"
             android:exported="false" />
         <activity
-            android:name=".webrtc.WebRTCDemoActivity"
+            android:name=".media.webrtc.WebRTCDemoActivity"
             android:exported="false" />
         <activity
-            android:name=".audio.AudioFileTransformActivity"
+            android:name=".media.audio.AudioFileTransformActivity"
             android:exported="false" />
         <activity
-            android:name=".camera.CameraActivity"
+            android:name=".media.camera.CameraActivity"
             android:exported="false" />
         <activity
-            android:name=".reentrantlock.ReentrantLockTestActivity"
+            android:name=".concurrent.lock.ReentrantLockTestActivity"
             android:exported="false" />
         <activity
-            android:name=".broadcast.BroadcastActivity"
+            android:name=".core.broadcast.BroadcastActivity"
             android:exported="false" />
         <activity
             android:name=".MainActivity"
@@ -61,34 +61,34 @@
         </activity>
 
         <receiver
-            android:name=".broadcast.MyReceiver"
+            android:name=".core.broadcast.MyReceiver"
             android:enabled="true"
             android:exported="true" />
 
         <activity
-            android:name=".launch_mode.SecondActivity"
+            android:name=".core.activity.launch_mode.SecondActivity"
             android:exported="false"
             android:launchMode="singleTask" />
         <activity
-            android:name=".launch_mode.FirstActivity"
+            android:name=".core.activity.launch_mode.FirstActivity"
             android:exported="true" />
         <activity
-            android:name=".scroll_conflict.ScrollConflictActivity"
+            android:name=".core.touch.ScrollConflictActivity"
             android:exported="true" />
         <activity
-            android:name=".view_basic.TouchEventDispatchActivity"
+            android:name=".core.touch.TouchEventDispatchActivity"
             android:exported="true" />
         <activity
-            android:name=".view_basic.VelocityTrackerActivity"
+            android:name=".core.touch.VelocityTrackerActivity"
             android:exported="true" />
         <activity
-            android:name=".view_basic.TouchEventActivity"
+            android:name=".core.touch.TouchEventActivity"
             android:exported="true" />
         <activity
-            android:name=".view_basic.TestLayoutParamsActivity"
+            android:name=".core.touch.TestLayoutParamsActivity"
             android:exported="true" />
         <activity
-            android:name=".surface.SurfaceADumpActivity"
+            android:name=".media.surface.SurfaceADumpActivity"
             android:exported="true"
             android:label="@string/app_name"
             android:theme="@style/Theme.Demos" />

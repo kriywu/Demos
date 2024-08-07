@@ -3,11 +3,11 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".scroll_conflict.ScrollConflictActivity">
+    tools:context=".core.touch.ScrollConflictActivity">
 
 
 
-    <com.wurengao.demos.scroll_conflict.MyScrollView
+    <com.wurengao.demos.core.touch.MyScrollView
         android:id="@+id/scrollView"
         android:background="@color/black"
         android:layout_width="match_parent"
@@ -33,7 +33,7 @@
 
         </LinearLayout>
 
-    </com.wurengao.demos.scroll_conflict.MyScrollView>
+    </com.wurengao.demos.core.touch.MyScrollView>
 
 
 
