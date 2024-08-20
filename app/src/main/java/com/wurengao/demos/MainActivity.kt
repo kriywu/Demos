@@ -14,7 +14,6 @@ import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import androidx.recyclerview.widget.RecyclerView.LayoutParams
 import androidx.recyclerview.widget.RecyclerView.ViewHolder
-import com.wurengao.demos.concurrent.lock.ReentrantLockTestActivity
 import com.wurengao.demos.core.broadcast.BroadcastActivity
 import com.wurengao.demos.core.ipc.BinderClientActivity
 import com.wurengao.demos.core.touch.TouchEventDispatchActivity
@@ -33,7 +32,6 @@ class MainActivity : AppCompatActivity() {
 
     private val list = listOf(
         ItemData("Java Core", null),
-        ItemData("Lock", ReentrantLockTestActivity::class.java),
 
         ItemData("Android Core", null),
         ItemData("Activity", BroadcastActivity::class.java),
