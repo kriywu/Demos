@@ -14,10 +14,14 @@ import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import androidx.recyclerview.widget.RecyclerView.LayoutParams
 import androidx.recyclerview.widget.RecyclerView.ViewHolder
+import com.wurengao.demos.apm.HotFixActivity
+import com.wurengao.demos.concurrent.ReadWriteLockActivity
+import com.wurengao.demos.core.UIDesignActivity
 import com.wurengao.demos.core.broadcast.BroadcastActivity
 import com.wurengao.demos.core.ipc.BinderClientActivity
 import com.wurengao.demos.core.touch.TouchEventDispatchActivity
 import com.wurengao.demos.core.view.FlowActivity
+import com.wurengao.demos.feature.StoryCreateGuideActivity
 import com.wurengao.demos.media.OpenGLFilterActivity
 import com.wurengao.demos.media.audio.AudioFileTransformActivity
 import com.wurengao.demos.media.camera.CameraActivity
@@ -32,6 +36,8 @@ class MainActivity : AppCompatActivity() {
 
     private val list = listOf(
         ItemData("Java Core", null),
+        ItemData("Read Write Lock", ReadWriteLockActivity::class.java),
+        ItemData("Hot Fix", HotFixActivity::class.java),
 
         ItemData("Android Core", null),
         ItemData("Activity", BroadcastActivity::class.java),
@@ -41,6 +47,8 @@ class MainActivity : AppCompatActivity() {
         ItemData("Binder", BinderClientActivity::class.java),
         ItemData("ViewGroup", FlowActivity::class.java),
         ItemData("Touch Event", TouchEventDispatchActivity::class.java),
+        ItemData("UI Design", UIDesignActivity::class.java),
+
 
 
         ItemData("Media", null),
@@ -49,8 +57,13 @@ class MainActivity : AppCompatActivity() {
         ItemData("Video Render", SurfaceADumpActivity::class.java),
         ItemData("Audio Render", AudioFileTransformActivity::class.java),
 
+
         ItemData("Native Core", null),
         ItemData("MMAP", MMapDemoActivity::class.java),
+
+
+        ItemData("Feature", null),
+        ItemData("Story Guide", StoryCreateGuideActivity::class.java),
 
 
     )

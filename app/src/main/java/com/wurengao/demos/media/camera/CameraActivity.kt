@@ -54,11 +54,6 @@ class CameraActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_camera)
 
-//        surfaceView.layoutParams.apply {
-//            width = defaultWidth
-//            height = defaultHeight
-//        }
-
         checkAndOpenCamera()
     }
 
@@ -94,7 +89,6 @@ class CameraActivity : AppCompatActivity() {
             override fun onError(camera: CameraDevice, error: Int) {
                 cameraDevice.close()
                 Log.d(TAG, "onError: $error")
-//                this@CameraActivity.finish()
             }
         }
     }

@@ -3,32 +3,38 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
+    android:padding="64dp"
     tools:context=".media.surface.SurfaceADumpActivity">
 
 
-    <LinearLayout
+    <androidx.cardview.widget.CardView
         android:id="@+id/container"
-        android:layout_width="200dp"
+        app:cardCornerRadius="12dp"
+        android:layout_width="match_parent"
         android:orientation="vertical"
-        android:layout_height="200dp">
-        <SurfaceView
-            android:id="@+id/surface_view"
+        android:layout_height="match_parent">
+
+        <FrameLayout
             android:layout_width="match_parent"
-            android:layout_height="100dp" />
+            android:background="@drawable/stoke"
+            android:layout_height="match_parent">
 
-        <Button
-            android:id="@+id/btn"
-            android:text="这是按钮"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
+            <SurfaceView
+                android:id="@+id/surface_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
 
-    </LinearLayout>
+        </FrameLayout>
+
+    </androidx.cardview.widget.CardView>
 
 
     <ImageView
         android:id="@+id/iv"
         android:layout_marginTop="24dp"
+        android:visibility="gone"
         android:layout_width="200dp"
         android:layout_height="200dp"/>
 

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="16dp"
+    android:orientation="vertical"
+    android:background="@mipmap/story_bg"
+    tools:context=".feature.StoryCreateGuideActivity">
+
+
+    <ProgressBar
+        android:layout_width="match_parent"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:layout_height="wrap_content"/>
+
+
+    <com.wurengao.demos.feature.CoverContainerLayout
+        android:id="@+id/cover_container"
+        android:layout_gravity="center"
+        android:layout_margin="32dp"
+        android:layout_width="300dp"
+        android:layout_height="300dp">
+
+    </com.wurengao.demos.feature.CoverContainerLayout>
+
+
+    <TextView
+        android:text="Show your friends what you've been up to"
+        android:textSize="32dp"
+        android:textStyle="bold"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="32dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
+    <Button
+        android:text="Create new Story"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_gravity="center"
+        android:textColor="@color/black"
+        android:paddingLeft="32dp"
+        android:paddingRight="32dp"
+        android:textAllCaps="false"
+        android:background="@drawable/button_shape"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:text="Not now"
+        android:textSize="16sp"
+        android:layout_margin="8dp"
+        android:layout_gravity="center"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+
+
+</LinearLayout>
